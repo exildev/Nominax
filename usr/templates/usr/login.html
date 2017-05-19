@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Iniciar sesión</title>
+	</head>
+	<body>
+		<form action="/usr/login/do/" method="post">
+			{%csrf_token%}
+			<ul>
+				<li>
+					<label>Usuario:</label>
+					<input type="text" name="username">
+				</li>
+				<li>
+					<label>Clave:</label>
+					<input type="password" name="password">
+				</li>
+			</ul>
+			<input type="submit" value="Ingresar">
+		</form>
+	</body>
+</html>
